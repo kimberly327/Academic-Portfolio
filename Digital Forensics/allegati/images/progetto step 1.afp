@@ -1,0 +1,1546 @@
+{
+   "Name" : "Amped FIVE Project",
+   "Version" : "3.0",
+   "Properties" : {
+      "Case" : "",
+      "Author" : "",
+      "Description" : "",
+      "Report Max Image Width" : 600,
+      "Report Min Image Width" : 0
+   },
+   "Chains" : [
+      {
+         "Name" : "Catena",
+         "Id" : 1,
+         "IsExpanded" : true,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Video Loader",
+               "Id" : 1,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "Gricignano (CE)   Furto di contante e oro in viella Buonanno (100915[1].mp4",
+                  "Video Engine" : "FFMS with Audio",
+                  "Color Range" : "From File",
+                  "Audio Stream" : "1",
+                  "Original File" : ""
+               }
+            },
+            {
+               "Type" : "Hash Code",
+               "Id" : 2,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "SHA256",
+                  "Hash Codes" : {
+                     "0" : "db2b6b8627337b569c1ff71b2a09908d127a16c8c5c567150c560ef48dc96c61"
+                  }
+               }
+            },
+            {
+               "Type" : "Undistort",
+               "Id" : 6,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "Polynomial",
+                  "Distortion" : -0.14,
+                  "Canvas Size" : 1.4,
+                  "Interpolation" : "Bicubic",
+                  "Background Color" : "rgba(0, 0, 0, 0.000)",
+                  "Distortion Computation" : "Manual",
+                  "Points on Line 1" : [
+                  ],
+                  "Points on Line 2" : [
+                  ],
+                  "Points on Line 3" : [
+                  ]
+               }
+            }
+         ]
+      },
+      {
+         "Name" : "2833",
+         "Id" : 60,
+         "IsExpanded" : false,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Image Loader",
+               "Id" : 60,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "fotogramma 2833.jpg"
+               }
+            },
+            {
+               "Type" : "Hash Code",
+               "Id" : 61,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "SHA256",
+                  "Hash Codes" : {
+                     "0" : "a970e354d12b86271b3b875d9896c900634c04733219a0b21e645ccd51e72628"
+                  }
+               }
+            },
+            {
+               "Type" : "Correct Perspective",
+               "Id" : 63,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Source Points" : [
+                     [
+                        591,
+                        1289
+                     ],
+                     [
+                        652,
+                        1298
+                     ],
+                     [
+                        652,
+                        1315
+                     ],
+                     [
+                        591,
+                        1306
+                     ]
+                  ],
+                  "Target Selection" : [
+                     676,
+                     1121,
+                     166,
+                     59
+                  ]
+               }
+            },
+            {
+               "Type" : "Unsharp Masking",
+               "Id" : 64,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Strength" : 1,
+                  "Size" : 39,
+                  "Threshold" : 0,
+                  "Mode" : "Colors",
+                  "Selection" : {
+                     "Type" : "Static Tracking",
+                     "Input" : {
+                        "0" : [
+                           693,
+                           1129,
+                           128,
+                           50
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Contrast Stretch",
+               "Id" : 62,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "Intensity",
+                  "Sensitivity" : 1.2,
+                  "Selection" : {
+                     "Type" : "Static Tracking",
+                     "Input" : {
+                        "0" : [
+                           694,
+                           1130,
+                           129,
+                           49
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 88,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "0" : [
+                           649,
+                           1089,
+                           225,
+                           116
+                        ]
+                     }
+                  }
+               }
+            }
+         ]
+      },
+      {
+         "Name" : "2805",
+         "Id" : 46,
+         "IsExpanded" : false,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Image Loader",
+               "Id" : 46,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "fotogramma 2805.jpg"
+               }
+            },
+            {
+               "Type" : "Hash Code",
+               "Id" : 47,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "SHA256",
+                  "Hash Codes" : {
+                     "0" : "d257a5fd277e3dbb23bb9d97a01329a5f9305339dc29dfd64664c79f4d8194e8"
+                  }
+               }
+            },
+            {
+               "Type" : "Correct Perspective",
+               "Id" : 58,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Source Points" : [
+                     [
+                        574,
+                        1224
+                     ],
+                     [
+                        628,
+                        1236
+                     ],
+                     [
+                        628,
+                        1255
+                     ],
+                     [
+                        574,
+                        1241
+                     ]
+                  ],
+                  "Target Selection" : [
+                     559,
+                     1208,
+                     112,
+                     59
+                  ]
+               }
+            },
+            {
+               "Type" : "Unsharp Masking",
+               "Id" : 54,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Strength" : 1,
+                  "Size" : 39,
+                  "Threshold" : 0,
+                  "Mode" : "Colors",
+                  "Selection" : {
+                     "Type" : "Static Tracking",
+                     "Input" : {
+                        "0" : [
+                           573,
+                           1220,
+                           85,
+                           46
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Contrast Stretch",
+               "Id" : 50,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "Intensity",
+                  "Sensitivity" : 1,
+                  "Selection" : {
+                     "Type" : "Static Tracking",
+                     "Input" : {
+                        "0" : [
+                           574,
+                           1221,
+                           85,
+                           46
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 89,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "0" : [
+                           545,
+                           1199,
+                           143,
+                           83
+                        ]
+                     }
+                  }
+               }
+            }
+         ]
+      },
+      {
+         "Name" : "2229",
+         "Id" : 66,
+         "IsExpanded" : false,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Image Loader",
+               "Id" : 66,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "fotogramma 2229.jpg"
+               }
+            },
+            {
+               "Type" : "Hash Code",
+               "Id" : 70,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "SHA256",
+                  "Hash Codes" : {
+                     "0" : "9e9dec004dc27ea5f435b64bdc7ee802917a7be4c165446e94ce06c5f06f072b"
+                  }
+               }
+            },
+            {
+               "Type" : "Deblocking",
+               "Id" : 83,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Strength" : 2,
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 84,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "0" : [
+                           679,
+                           1004,
+                           116,
+                           107
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Super Resolution",
+               "Id" : 85,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Zoom" : 4,
+                  "Iterations" : 10,
+                  "Selection" : [
+                     0,
+                     0,
+                     0,
+                     0
+                  ]
+               }
+            }
+         ]
+      },
+      {
+         "Name" : "2243",
+         "Id" : 69,
+         "IsExpanded" : false,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Image Loader",
+               "Id" : 69,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "fotogramma 2243.jpg"
+               }
+            },
+            {
+               "Type" : "Hash Code",
+               "Id" : 71,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "SHA256",
+                  "Hash Codes" : {
+                     "0" : "aec0e4d776820beba857ee6cc3a725cde1b51e772e4dd91fca9ab5f74841e005"
+                  }
+               }
+            },
+            {
+               "Type" : "Deblocking",
+               "Id" : 79,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Strength" : 2,
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 74,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "0" : [
+                           687,
+                           1004,
+                           99,
+                           110
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Super Resolution",
+               "Id" : 75,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Zoom" : 4,
+                  "Iterations" : 10,
+                  "Selection" : [
+                     0,
+                     0,
+                     0,
+                     0
+                  ]
+               }
+            }
+         ]
+      },
+      {
+         "Name" : "2905",
+         "Id" : 68,
+         "IsExpanded" : false,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Image Loader",
+               "Id" : 68,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "fotogramma 2905.jpg"
+               }
+            },
+            {
+               "Type" : "Hash Code",
+               "Id" : 73,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "SHA256",
+                  "Hash Codes" : {
+                     "0" : "292ce09a99afd51991f5357d590bbd3b3a3340dd16eaa3b3ea71ecd5c25f267c"
+                  }
+               }
+            },
+            {
+               "Type" : "Deblocking",
+               "Id" : 80,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Strength" : 2,
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 81,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "0" : [
+                           528,
+                           1016,
+                           102,
+                           105
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Super Resolution",
+               "Id" : 82,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Zoom" : 4,
+                  "Iterations" : 10,
+                  "Selection" : [
+                     0,
+                     0,
+                     0,
+                     0
+                  ]
+               }
+            }
+         ]
+      },
+      {
+         "Name" : "2915",
+         "Id" : 67,
+         "IsExpanded" : false,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Image Loader",
+               "Id" : 67,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "fotogramma 2915.jpg"
+               }
+            },
+            {
+               "Type" : "Hash Code",
+               "Id" : 72,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "SHA256",
+                  "Hash Codes" : {
+                     "0" : "27be72cf49df5f06828a7cdaf5908466ee8c9707ab362b96949d8153194e8b81"
+                  }
+               }
+            },
+            {
+               "Type" : "Deblocking",
+               "Id" : 76,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Strength" : 2,
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 77,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "0" : [
+                           526,
+                           1023,
+                           103,
+                           101
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Super Resolution",
+               "Id" : 78,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Zoom" : 4,
+                  "Iterations" : 10,
+                  "Selection" : [
+                     0,
+                     0,
+                     0,
+                     0
+                  ]
+               }
+            }
+         ]
+      },
+      {
+         "Name" : "2887",
+         "Id" : 90,
+         "IsExpanded" : true,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Image Loader",
+               "Id" : 90,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "fotogramma 2887.jpg"
+               }
+            },
+            {
+               "Type" : "Hash Code",
+               "Id" : 91,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "SHA256",
+                  "Hash Codes" : {
+                     "0" : "d0c1ea8e33d81e7287c2e702089d045234e7add2c48819c5b814f6c99178f83e"
+                  }
+               }
+            },
+            {
+               "Type" : "Measure 3d",
+               "Id" : 92,
+               "Enabled" : true,
+               "Parameters" : {
+                  "X-axis Lines" : [
+                     [
+                        [
+                           542,
+                           750
+                        ],
+                        [
+                           448,
+                           800
+                        ]
+                     ],
+                     [
+                        [
+                           608,
+                           917
+                        ],
+                        [
+                           499,
+                           1003
+                        ]
+                     ]
+                  ],
+                  "Y-axis Lines" : [
+                     [
+                        [
+                           419,
+                           845
+                        ],
+                        [
+                           470,
+                           1136
+                        ]
+                     ],
+                     [
+                        [
+                           470,
+                           816
+                        ],
+                        [
+                           513,
+                           1095
+                        ]
+                     ],
+                     [
+                        [
+                           584,
+                           730
+                        ],
+                        [
+                           617,
+                           995
+                        ]
+                     ]
+                  ],
+                  "Z-axis Lines" : [
+                     [
+                        [
+                           270,
+                           880
+                        ],
+                        [
+                           428,
+                           901
+                        ]
+                     ],
+                     [
+                        [
+                           290,
+                           987
+                        ],
+                        [
+                           448,
+                           1009
+                        ]
+                     ]
+                  ],
+                  "Reference Axis Direction" : "Z-axis",
+                  "Reference Line" : [
+                     [
+                        445,
+                        1008
+                     ],
+                     [
+                        289,
+                        986
+                     ]
+                  ],
+                  "Reference Length" : 1.1,
+                  "Unit of Measurement" : "m",
+                  "Decimal Places" : 2,
+                  "Correct Direction" : true,
+                  "Output Line" : [
+                     [
+                        564,
+                        1197
+                     ],
+                     [
+                        511,
+                        1189
+                     ]
+                  ],
+                  "Output Length" : 0.4350173234,
+                  "Output Error" : 0.04777632931,
+                  "Experimental Error" : 0,
+                  "Output Range" : "0.39 m – 0.48 m",
+                  "Output Line 2" : [
+                     [
+                        0,
+                        0
+                     ],
+                     [
+                        0,
+                        0
+                     ]
+                  ],
+                  "Output Length 2" : 0,
+                  "Output Error 2" : 0,
+                  "Output Range 2" : "",
+                  "Difference" : 0,
+                  "Difference Error" : 0,
+                  "Difference Range" : "",
+                  "Helper Lines" : [
+                  ],
+                  "Show X Lines" : true,
+                  "Show Y Lines" : true,
+                  "Show Z Lines" : true,
+                  "Show Reference Line" : true,
+                  "Show Reference Measure" : true,
+                  "Show Output Line" : true,
+                  "Show Output Measure" : true,
+                  "Show Helper Lines" : true,
+                  "Show Horizon" : false
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 93,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "0" : [
+                           202,
+                           710,
+                           623,
+                           619
+                        ]
+                     }
+                  }
+               }
+            }
+         ]
+      }
+   ],
+   "ChainsTree" : [
+      {
+         "Name" : "Catena",
+         "Id" : 1,
+         "IsExpanded" : true,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Video Loader",
+               "Id" : 1,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "Gricignano (CE)   Furto di contante e oro in viella Buonanno (100915[1].mp4",
+                  "Video Engine" : "FFMS with Audio",
+                  "Color Range" : "From File",
+                  "Audio Stream" : "1",
+                  "Original File" : ""
+               }
+            },
+            {
+               "Type" : "Hash Code",
+               "Id" : 2,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "SHA256",
+                  "Hash Codes" : {
+                     "0" : "db2b6b8627337b569c1ff71b2a09908d127a16c8c5c567150c560ef48dc96c61"
+                  }
+               }
+            },
+            {
+               "Type" : "Undistort",
+               "Id" : 6,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "Polynomial",
+                  "Distortion" : -0.14,
+                  "Canvas Size" : 1.4,
+                  "Interpolation" : "Bicubic",
+                  "Background Color" : "rgba(0, 0, 0, 0.000)",
+                  "Distortion Computation" : "Manual",
+                  "Points on Line 1" : [
+                  ],
+                  "Points on Line 2" : [
+                  ],
+                  "Points on Line 3" : [
+                  ]
+               }
+            }
+         ]
+      },
+      {
+         "Name" : "2833",
+         "Id" : 60,
+         "IsExpanded" : false,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Image Loader",
+               "Id" : 60,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "fotogramma 2833.jpg"
+               }
+            },
+            {
+               "Type" : "Hash Code",
+               "Id" : 61,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "SHA256",
+                  "Hash Codes" : {
+                     "0" : "a970e354d12b86271b3b875d9896c900634c04733219a0b21e645ccd51e72628"
+                  }
+               }
+            },
+            {
+               "Type" : "Correct Perspective",
+               "Id" : 63,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Source Points" : [
+                     [
+                        591,
+                        1289
+                     ],
+                     [
+                        652,
+                        1298
+                     ],
+                     [
+                        652,
+                        1315
+                     ],
+                     [
+                        591,
+                        1306
+                     ]
+                  ],
+                  "Target Selection" : [
+                     676,
+                     1121,
+                     166,
+                     59
+                  ]
+               }
+            },
+            {
+               "Type" : "Unsharp Masking",
+               "Id" : 64,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Strength" : 1,
+                  "Size" : 39,
+                  "Threshold" : 0,
+                  "Mode" : "Colors",
+                  "Selection" : {
+                     "Type" : "Static Tracking",
+                     "Input" : {
+                        "0" : [
+                           693,
+                           1129,
+                           128,
+                           50
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Contrast Stretch",
+               "Id" : 62,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "Intensity",
+                  "Sensitivity" : 1.2,
+                  "Selection" : {
+                     "Type" : "Static Tracking",
+                     "Input" : {
+                        "0" : [
+                           694,
+                           1130,
+                           129,
+                           49
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 88,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "0" : [
+                           649,
+                           1089,
+                           225,
+                           116
+                        ]
+                     }
+                  }
+               }
+            }
+         ]
+      },
+      {
+         "Name" : "2805",
+         "Id" : 46,
+         "IsExpanded" : false,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Image Loader",
+               "Id" : 46,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "fotogramma 2805.jpg"
+               }
+            },
+            {
+               "Type" : "Hash Code",
+               "Id" : 47,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "SHA256",
+                  "Hash Codes" : {
+                     "0" : "d257a5fd277e3dbb23bb9d97a01329a5f9305339dc29dfd64664c79f4d8194e8"
+                  }
+               }
+            },
+            {
+               "Type" : "Correct Perspective",
+               "Id" : 58,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Source Points" : [
+                     [
+                        574,
+                        1224
+                     ],
+                     [
+                        628,
+                        1236
+                     ],
+                     [
+                        628,
+                        1255
+                     ],
+                     [
+                        574,
+                        1241
+                     ]
+                  ],
+                  "Target Selection" : [
+                     559,
+                     1208,
+                     112,
+                     59
+                  ]
+               }
+            },
+            {
+               "Type" : "Unsharp Masking",
+               "Id" : 54,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Strength" : 1,
+                  "Size" : 39,
+                  "Threshold" : 0,
+                  "Mode" : "Colors",
+                  "Selection" : {
+                     "Type" : "Static Tracking",
+                     "Input" : {
+                        "0" : [
+                           573,
+                           1220,
+                           85,
+                           46
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Contrast Stretch",
+               "Id" : 50,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "Intensity",
+                  "Sensitivity" : 1,
+                  "Selection" : {
+                     "Type" : "Static Tracking",
+                     "Input" : {
+                        "0" : [
+                           574,
+                           1221,
+                           85,
+                           46
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 89,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "0" : [
+                           545,
+                           1199,
+                           143,
+                           83
+                        ]
+                     }
+                  }
+               }
+            }
+         ]
+      },
+      {
+         "Name" : "2229",
+         "Id" : 66,
+         "IsExpanded" : false,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Image Loader",
+               "Id" : 66,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "fotogramma 2229.jpg"
+               }
+            },
+            {
+               "Type" : "Hash Code",
+               "Id" : 70,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "SHA256",
+                  "Hash Codes" : {
+                     "0" : "9e9dec004dc27ea5f435b64bdc7ee802917a7be4c165446e94ce06c5f06f072b"
+                  }
+               }
+            },
+            {
+               "Type" : "Deblocking",
+               "Id" : 83,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Strength" : 2,
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 84,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "0" : [
+                           679,
+                           1004,
+                           116,
+                           107
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Super Resolution",
+               "Id" : 85,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Zoom" : 4,
+                  "Iterations" : 10,
+                  "Selection" : [
+                     0,
+                     0,
+                     0,
+                     0
+                  ]
+               }
+            }
+         ]
+      },
+      {
+         "Name" : "2243",
+         "Id" : 69,
+         "IsExpanded" : false,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Image Loader",
+               "Id" : 69,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "fotogramma 2243.jpg"
+               }
+            },
+            {
+               "Type" : "Hash Code",
+               "Id" : 71,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "SHA256",
+                  "Hash Codes" : {
+                     "0" : "aec0e4d776820beba857ee6cc3a725cde1b51e772e4dd91fca9ab5f74841e005"
+                  }
+               }
+            },
+            {
+               "Type" : "Deblocking",
+               "Id" : 79,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Strength" : 2,
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 74,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "0" : [
+                           687,
+                           1004,
+                           99,
+                           110
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Super Resolution",
+               "Id" : 75,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Zoom" : 4,
+                  "Iterations" : 10,
+                  "Selection" : [
+                     0,
+                     0,
+                     0,
+                     0
+                  ]
+               }
+            }
+         ]
+      },
+      {
+         "Name" : "2905",
+         "Id" : 68,
+         "IsExpanded" : false,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Image Loader",
+               "Id" : 68,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "fotogramma 2905.jpg"
+               }
+            },
+            {
+               "Type" : "Hash Code",
+               "Id" : 73,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "SHA256",
+                  "Hash Codes" : {
+                     "0" : "292ce09a99afd51991f5357d590bbd3b3a3340dd16eaa3b3ea71ecd5c25f267c"
+                  }
+               }
+            },
+            {
+               "Type" : "Deblocking",
+               "Id" : 80,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Strength" : 2,
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 81,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "0" : [
+                           528,
+                           1016,
+                           102,
+                           105
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Super Resolution",
+               "Id" : 82,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Zoom" : 4,
+                  "Iterations" : 10,
+                  "Selection" : [
+                     0,
+                     0,
+                     0,
+                     0
+                  ]
+               }
+            }
+         ]
+      },
+      {
+         "Name" : "2915",
+         "Id" : 67,
+         "IsExpanded" : false,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Image Loader",
+               "Id" : 67,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "fotogramma 2915.jpg"
+               }
+            },
+            {
+               "Type" : "Hash Code",
+               "Id" : 72,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "SHA256",
+                  "Hash Codes" : {
+                     "0" : "27be72cf49df5f06828a7cdaf5908466ee8c9707ab362b96949d8153194e8b81"
+                  }
+               }
+            },
+            {
+               "Type" : "Deblocking",
+               "Id" : 76,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Strength" : 2,
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 77,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "0" : [
+                           526,
+                           1023,
+                           103,
+                           101
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Super Resolution",
+               "Id" : 78,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Zoom" : 4,
+                  "Iterations" : 10,
+                  "Selection" : [
+                     0,
+                     0,
+                     0,
+                     0
+                  ]
+               }
+            }
+         ]
+      },
+      {
+         "Name" : "2887",
+         "Id" : 90,
+         "IsExpanded" : true,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Image Loader",
+               "Id" : 90,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "fotogramma 2887.jpg"
+               }
+            },
+            {
+               "Type" : "Hash Code",
+               "Id" : 91,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "SHA256",
+                  "Hash Codes" : {
+                     "0" : "d0c1ea8e33d81e7287c2e702089d045234e7add2c48819c5b814f6c99178f83e"
+                  }
+               }
+            },
+            {
+               "Type" : "Measure 3d",
+               "Id" : 92,
+               "Enabled" : true,
+               "Parameters" : {
+                  "X-axis Lines" : [
+                     [
+                        [
+                           542,
+                           750
+                        ],
+                        [
+                           448,
+                           800
+                        ]
+                     ],
+                     [
+                        [
+                           608,
+                           917
+                        ],
+                        [
+                           499,
+                           1003
+                        ]
+                     ]
+                  ],
+                  "Y-axis Lines" : [
+                     [
+                        [
+                           419,
+                           845
+                        ],
+                        [
+                           470,
+                           1136
+                        ]
+                     ],
+                     [
+                        [
+                           470,
+                           816
+                        ],
+                        [
+                           513,
+                           1095
+                        ]
+                     ],
+                     [
+                        [
+                           584,
+                           730
+                        ],
+                        [
+                           617,
+                           995
+                        ]
+                     ]
+                  ],
+                  "Z-axis Lines" : [
+                     [
+                        [
+                           270,
+                           880
+                        ],
+                        [
+                           428,
+                           901
+                        ]
+                     ],
+                     [
+                        [
+                           290,
+                           987
+                        ],
+                        [
+                           448,
+                           1009
+                        ]
+                     ]
+                  ],
+                  "Reference Axis Direction" : "Z-axis",
+                  "Reference Line" : [
+                     [
+                        445,
+                        1008
+                     ],
+                     [
+                        289,
+                        986
+                     ]
+                  ],
+                  "Reference Length" : 1.1,
+                  "Unit of Measurement" : "m",
+                  "Decimal Places" : 2,
+                  "Correct Direction" : true,
+                  "Output Line" : [
+                     [
+                        564,
+                        1197
+                     ],
+                     [
+                        511,
+                        1189
+                     ]
+                  ],
+                  "Output Length" : 0.4350173234,
+                  "Output Error" : 0.04777632931,
+                  "Experimental Error" : 0,
+                  "Output Range" : "0.39 m – 0.48 m",
+                  "Output Line 2" : [
+                     [
+                        0,
+                        0
+                     ],
+                     [
+                        0,
+                        0
+                     ]
+                  ],
+                  "Output Length 2" : 0,
+                  "Output Error 2" : 0,
+                  "Output Range 2" : "",
+                  "Difference" : 0,
+                  "Difference Error" : 0,
+                  "Difference Range" : "",
+                  "Helper Lines" : [
+                  ],
+                  "Show X Lines" : true,
+                  "Show Y Lines" : true,
+                  "Show Z Lines" : true,
+                  "Show Reference Line" : true,
+                  "Show Reference Measure" : true,
+                  "Show Output Line" : true,
+                  "Show Output Measure" : true,
+                  "Show Helper Lines" : true,
+                  "Show Horizon" : false
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 93,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "0" : [
+                           202,
+                           710,
+                           623,
+                           619
+                        ]
+                     }
+                  }
+               }
+            }
+         ]
+      }
+   ],
+   "Bookmarks" : [
+   ],
+   "BookmarksTree" : [
+   ],
+   "Notes" : "",
+   "Id" : 91,
+   "Position" : 0
+}
